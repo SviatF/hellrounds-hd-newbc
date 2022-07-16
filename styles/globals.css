@@ -1,11 +1,70 @@
+@font-face {
+	font-family: 'HarlowSolidItalic';
+	src: url('../public/fonts/HARLOWSI/HARLOWSI.eot');
+	src: local('☺'), url('../public/fonts/HARLOWSI/HARLOWSI.woff') format('woff'),
+     url('../public/fonts/HARLOWSI/HARLOWSI.ttf') format('truetype'),
+      url('../public/fonts/HARLOWSI/HARLOWSI.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monotype Corsiva';
+    src: url('../public/fonts/MTCORSIVA/Monotype-Corsiva.eot');
+    src: url('../public/fonts/MTCORSIVA/Monotype-Corsiva.eot') format('embedded-opentype'),
+        url('../public/fonts/MTCORSIVA/Monotype-Corsiva.woff2') format('woff2'),
+        url('../public/fonts/MTCORSIVA/Monotype-Corsiva.woff') format('woff'),
+        url('../public/fonts/MTCORSIVA/Monotype-Corsiva.ttf') format('truetype'),
+        url('../public/fonts/MTCORSIVA/Monotype-Corsiva.svg#MonotypeCorsiva') format('svg');
+    font-weight: normal;
+    font-style: italic;
+   
+  }
+  @font-face {
+    font-family: 'Gill Sans MT Ext Condensed';
+    src: url('../public/fonts/GLSNECB/GLSNECB.eot');
+    src: url('../public/fonts/GLSNECB/GLSNECB.eot') format('embedded-opentype'),
+        url('../public/fonts/GLSNECB/GLSNECB.woff2') format('woff2'),
+        url('../public/fonts/GLSNECB/GLSNECB.woff') format('woff'),
+        url('../public/fonts/GLSNECB/GLSNECB.ttf') format('truetype'),
+        url('../public/fonts/GLSNECB/GLSNECB.svg#MonotypeCorsiva') format('svg');
+    font-weight: bold;
+  }
+
+
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    min-height: 200vh;
+    background-color: #111;
 }
 
+h3{
+  font-family: 'Gill Sans MT Ext Condensed';
+  margin: 0;
+  font-size: 50px;
+}
+h4{
+  font-family: 'Monotype Corsiva';
+  margin: 1% 0 0 0;
+  opacity: 0.7;
+}
+header{
+  margin:0px auto;
+}
+main{
+  margin-left: auto;
+  width: 95%;
+  font-family: 'Roboto';
+}
+section{
+width:90%;
+margin:0px auto;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -14,3 +73,70 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.btn {
+  color: black;
+  cursor: pointer;
+  display: block;
+  font-size:20px;
+  font-family:'Monotype Corsiva';
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0px auto;
+  max-width: 160px; 
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  opacity: 0.7;
+}
+.btn-5 {
+  color:black;
+  text-align: center;
+  border: 0 solid ;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0);
+  outline: 1px solid;
+  outline-color: black;
+  outline-offset: 0px;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+
+.btn-5:hover {
+  box-shadow: inset 0 0 20px #111, 0 0 20px #1212;
+  outline-color: rgba(0, 0, 0, 0);
+   outline-offset: 15px; 
+   opacity: 1;
+}
+.btn-pd{
+    padding: 25px;
+}
+.btn-wh{
+  color: #fff;
+  border: 0 solid ;
+  box-shadow: inset 0 0 20px rgba(7, 7, 7, 0);
+  outline: 1px solid;
+  outline-color: #fff;
+  outline-offset: 0px;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn-wh:hover {
+  box-shadow: inset 0 0 20px rgb(0, 0, 0), 0 0 20px #222;
+  outline-color: rgba(255, 255, 255, 0.549);
+   outline-offset: 15px; 
+}
+
+::-webkit-scrollbar{
+  width: 15px;
+  }
+  ::-webkit-scrollbar-track{
+      background: #0b0b0b;
+  }
+  ::-webkit-scrollbar-thumb{
+      background: #161616;
+      border-radius: 10px;
+      border:3px solid #0b0b0b;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+      background-color:#1f1f1f;
+  }
